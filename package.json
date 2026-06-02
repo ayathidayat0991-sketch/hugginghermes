@@ -1,0 +1,11 @@
+{
+  "name": "huggingmes",
+  "version": "0.2.0",
+  "private": true,
+  "description": "HuggingMes Hermes Agent gateway for Hugging Face Spaces with WhatsApp Cloud API webhook support.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check health-server.js && node --check services/hermes-client.js && node --check services/whatsapp-cloud.js"
+  }
+}

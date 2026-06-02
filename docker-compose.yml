@@ -1,0 +1,15 @@
+services:
+  huggingmes:
+    build: .
+    ports:
+      - "7861:7861"
+    environment:
+      PORT: 7861
+      GATEWAY_TOKEN: dev-token
+      LLM_MODEL: openai/gpt-4o
+      WHATSAPP_PROVIDER: cloud
+      WHATSAPP_GRAPH_API_VERSION: v20.0
+    volumes:
+      - huggingmes-data:/opt/data
+volumes:
+  huggingmes-data:
